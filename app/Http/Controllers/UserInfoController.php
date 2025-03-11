@@ -11,7 +11,7 @@ class UserInfoController extends Controller
     // Calling Index view
     public function index()
     {
-        $user_info = UserInfo::paginate('10');
+        $user_info = UserInfo::get();
         return view('user-info', compact('user_info'));
     }
 

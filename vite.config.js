@@ -7,8 +7,14 @@ export default defineConfig({
             input: [
                 'resources/sass/app.scss',
                 'resources/js/app.js',
+                'resources/js/tables/user-info-table.js'
             ],
             refresh: true,
         }),
     ],
+    server: {
+        host: 'localhost',
+        port: 4000,
+        strictPort: true,
+    },
 });
